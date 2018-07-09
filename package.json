@@ -1,5 +1,5 @@
 {
-  "name": "serverless-aws-boilerplate",
+  "name": "serverless-boilerplate",
   "version": "1.1.7",
   "main": "src/handler.js",
   "author": "Kennedy Rose <krose@escaladesports.com>",
@@ -8,7 +8,7 @@
     "build": "serverless package",
     "deploy": "esca-scripts deploy --serverless --stage staging",
     "deploy-production": "esca-scripts test --serverless --stage production && esca-scripts deploy --serverless --stage production --prompt",
-    "dev": "esca-scripts dev --serverless",
+    "dev": "npm run invoke",
     "encrypt": "envdotjs",
     "invoke": "serverless invoke local --function hello",
     "logs": "esca-scripts logs",
@@ -16,7 +16,7 @@
     "reset": "rm -rf .git && git init && git add . && git commit -m 'Initial commit'",
     "test": "esca-scripts test --serverless --stage staging",
     "test-production": "esca-scripts test --serverless --stage production",
-    "travis": "opn https://travis-ci.org/escaladesports/serverless-aws-boilerplate/branches",
+    "travis": "opn https://travis-ci.org/escaladesports/serverless-boilerplate/branches",
     "unencrypt": "envdotjs --unencrypt"
   },
   "devDependencies": {

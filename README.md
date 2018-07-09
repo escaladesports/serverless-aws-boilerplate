@@ -1,6 +1,6 @@
-# serverless-aws-boilerplate
+# serverless-boilerplate
 
-[![Build Status](https://travis-ci.org/escaladesports/serverless-aws-boilerplate.svg?branch=master)](https://travis-ci.org/escaladesports/serverless-aws-boilerplate)
+[![Build Status](https://travis-ci.org/escaladesports/serverless-boilerplate.svg?branch=master)](https://travis-ci.org/escaladesports/serverless-boilerplate)
 
 A bare-bones boilerplate for working with [AWS Lambda functions](https://aws.amazon.com/lambda/) in the [Serverless framework](https://serverless.com/).
 
@@ -18,6 +18,7 @@ A bare-bones boilerplate for working with [AWS Lambda functions](https://aws.ama
 git clone git@github.com:escaladesports/serverless-aws-boilerplate.git new-function
 cd new-function
 yarn
+yarn reset
 ```
 
 ## Environment Variables
