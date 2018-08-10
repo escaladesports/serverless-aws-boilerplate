@@ -8,6 +8,11 @@ provider:
 functions:
   hello:
     handler: src/handler.hello
+    events:
+      - http:
+          path: hello
+          method: get
+          cors: true
 
 plugins:
   - serverless-webpack

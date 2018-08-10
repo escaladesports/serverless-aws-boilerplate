@@ -7,6 +7,10 @@
 	"scripts": {
 		"build": "sls package",
 		"deploy": "sls deploy -v -s development",
+		"invoke": "npm run invoke:local",
+		"invoke:local": "sls invoke local -s development -f hello",
+		"invoke:live": "sls invoke -s development -f hello",
+		"logs": "sls logs -t -s development -f hello",
 		"remove": "sls remove -v -s development"
 	},
 	"devDependencies": {
