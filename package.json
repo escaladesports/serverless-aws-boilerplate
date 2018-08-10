@@ -5,8 +5,9 @@
 	"author": "Kennedy Rose <krose@escaladesports.com>",
 	"license": "MIT",
 	"scripts": {
-		"build": "serverless package",
-		"deploy": "serverless deploy --verbose --stage development"
+		"build": "sls package",
+		"deploy": "sls deploy -v -s development",
+		"remove": "sls remove -v -s development"
 	},
 	"devDependencies": {
 		"babel-core": "^6.26.3",
